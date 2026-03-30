@@ -14,9 +14,6 @@ def connect_drone():
     vehicle.parameters['SIM_WIND_TURB_FREQ'] = float(os.getenv("SIM_WIND_TURB_FREQ", 0.2))
     return vehicle
 
-from dronekit import VehicleMode
-import time
-
 def arm_and_stabilize(vehicle):
     print("\n--- PRE-ARMING CHECKS ---")
     
